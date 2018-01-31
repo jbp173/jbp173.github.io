@@ -1,0 +1,183 @@
+<html>
+	<head>
+		<title> 
+			The Best Page Title Ever
+		</title>
+		
+		<link rel="stylesheed" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
+		<link rel="stylesheet" href="phone.css">
+
+	</head>
+	<body>
+		<!-- Tab Header -->
+		<div class="divClass" id="tabBar">
+			<button class="header" id="buttonDialer">
+				Dialer
+			</button>
+			<button class="header" id="buttonList">
+				Contact List
+			</button>
+			<button class="header" id="buttonAdd">
+				Add Contact
+			</button>
+		</div>
+
+		<!-- Dialer Tab -->
+		<div class="divClass" id="content">
+			<div class="divClass" id="contentDialer">
+				<h1>Dialer</h1> 
+				
+				<form class="formClass">
+					<label for="input1"></label>
+					<input id="input1">
+				</form>
+				
+				<!-- Row 1 -->
+				<button class="buttonClass" id="button1">
+					1
+				</button>
+				<button class="buttonClass" id="button2">
+					2
+				</button>
+				<button class="buttonClass" id="button3">
+					3
+				</button>
+				<br>
+
+				<!-- Row 2 -->
+				<button class="buttonClass" id="button4">
+					4
+				</button>
+				<button class="buttonClass" id="button5">
+					5
+				</button>
+				<button class="buttonClass" id="button6">
+					6
+				</button>
+				<br>
+
+				<!-- Row 3 -->
+				<button class="buttonClass" id="button7">
+					7
+				</button>
+				<button class="buttonClass" id="button8">
+					8
+				</button>
+				<button class="buttonClass" id="button9">
+					9
+				</button>
+				<br>
+
+				<!-- Row 4 -->
+				<button class="buttonClass" id="button*">
+					*
+				</button>
+				<button class="buttonClass" id="button0">
+					0
+				</button>
+				<button class="buttonClass" id="button#">
+					#
+				</button>
+				<br>
+				<br>
+				<!-- Row 5 -->
+				<button class="buttonClass2" id="buttonDial">
+					Dial
+				</button>
+				<button class="buttonClass2" id="buttonClear">
+					Clear
+				</button>
+				<br>
+
+			</div>
+
+			<!-- Contact List Tab -->
+			<div class="divClass" id="contentList">
+				
+				<h1>Contact List</h1>
+
+				<!-- Row 1 -->
+				<button class="buttonClass2" id="buttonName1">
+					Waylon Dalton
+				</button>
+				<button class="buttonClass2" id="buttonName2">
+					Marcus Cruz
+				</button>
+				<button class="buttonClass2" id="buttonName3">
+					Eddie Randolph
+				</button>
+				<br>
+
+				<!-- Row 2 -->
+				<button class="buttonClass2" id="buttonName4">
+					Justine Henderson			
+				</button>
+				<button class="buttonClass2" id="buttonName5">
+					Thalia Cobb
+				</button>
+				<button class="buttonClass2" id="buttonName6">
+					Angela Walker
+				</button>
+				<br>
+
+				<!-- Row 3 -->
+				<button class="buttonClass2" id="buttonName7">
+					Joanna Shaffer				
+				</button>
+				<button class="buttonClass2" id="buttonName8">
+					Hadassah Hartman
+				</button>
+				<button class="buttonClass2" id="buttonName9">
+					Mathias Little
+				</button>
+				<br>
+
+				<!-- Row 4 -->
+				<button class="buttonClass2" id="buttonName10">
+					Abdullah Lang		
+				</button>
+				<button class="buttonClass2" id="buttonName11">
+					Lia Shelton
+				</button>
+				<button class="buttonClass2" id="buttonName12">
+					Jonathon Sheppard
+				</button>
+				<br>
+
+
+			</div>
+
+			<!-- Add Contact Tab -->
+			<div class="divClass" id="contentAdd">
+				<h1>Add Contact</h1>
+
+				<form class="formClass">
+					<label for="addName">Name<br></label>
+					<input id="addName" placeholder="Jane Smith">
+				</form>
+
+				<form class="formClass">
+					<label for="addName">Phone number<br></label>
+					<input id="addName" placeholder="123-456-7890">
+				</form>
+
+				<form class="formClass">
+					<label for="addName">Email address<br></label>
+					<input id="addName" placeholder="jane.smith@colorado.edu">
+				</form>
+
+				<button class="buttonClass2" id="buttonContactAdd">
+					Add Contact
+				</button>
+				<button class="buttonClass2" id="buttonContactClear">
+					Clear
+				</button>
+
+
+			</div>
+		</div>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="phone.js"></script>
+	</body>
+</html>
