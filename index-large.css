@@ -6,19 +6,26 @@ button
 
 .buttonClass
 {
-	font-size: 60px;
+	font-size: 200%;
 }
 
 .buttonClass2
 {
-	font-size: 30px;
+	font-size: 200%;
 }
 
 .header
 {
-	font-size: 22px;
+	font-size: 200%;
 }
 
 
 #buttonClear { background: red; }
 #buttonContactClear { background: red; }
+
+body 
+{
+	background-color: black;
+	color: white;
+	font-size: 200%;
+}
