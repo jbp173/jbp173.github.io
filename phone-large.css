@@ -1,0 +1,31 @@
+button
+{ 
+	border-width: 0;
+	box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
+}
+
+.buttonClass
+{
+	font-size: 200%;
+}
+
+.buttonClass2
+{
+	font-size: 200%;
+}
+
+.header
+{
+	font-size: 200%;
+}
+
+
+#buttonClear { background: red; }
+#buttonContactClear { background: red; }
+
+body 
+{
+	background-color: black;
+	color: white;
+	font-size: 200%;
+}
