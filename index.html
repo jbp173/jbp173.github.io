@@ -1,221 +1,91 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
 <html>
 	<head>
-		<title> 
-			The Best Page Title Ever
+		<title>
+			Calculator Demo
 		</title>
-		
-		<link rel="stylesheed" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
-		<link rel="stylesheet" href="phone.css">
-
+		<link rel="stylesheet" href="calculator.css" type="text/css">
 	</head>
 	<body>
-		<!-- Tab Header -->
-		<div class="divClass" id="tabBar">
-			<button class="header" id="buttonDialer">
-				Dialer
-			</button>
-			<button class="header" id="buttonList">
-				Contact List
-			</button>
-			<button class="header" id="buttonAdd">
-				Add Contact
-			</button>
-			<button class="header" id="buttonAbout">
-				About this Project
-			</button>
-			<button class="header" id="buttonVision">
-				<a href= "index-large.html" >Low Vision Mode </a>
-			</button>
+		<div id="calculator">
+			<h1>calc U l8r</h1>
+			<div class="calculator_row">
+				<input id="number_input">
+			</div>
+			<div class="calculator_row">
+				<button id="button7" class="calcButton row1 col1">7</button>
+				<button id="button8" class="calcButton row1 col2">8</button>
+				<button id="button9" class="calcButton row1 col3">9</button>
+				<button id="buttonDivide" class="calcButton row1 col4 function">/</button>
+			</div>
+			<div class="calculator_row">
+				<button id="button4" class="calcButton row2 col1">4</button>
+				<button id="button5" class="calcButton row2 col2">5</button>
+				<button id="button6" class="calcButton row2 col3">6</button>
+				<button id="buttonMultiply" class="calcButton row2 col4 function">*</button>
+			</div>
+			<div class="calculator_row">
+				<button id="button1" class="calcButton row3 col1">1</button>
+				<button id="button2" class="calcButton row3 col2">2</button>
+				<button id="button3" class="calcButton row3 col3">3</button>
+				<button id="buttonAdd" class="calcButton row3 col4 function">+</button>
+			</div>
+			<div class="calculator_row">
+				<button id="button0" class="calcButton row4 col1">0</button>
+				<button id="buttonClear" class="calcButton row4 col2 meta">C</button>
+				<button id="buttonEquals" class="calcButton row4 col3 meta">=</button>
+				<button id="buttonSubtract" class="calcButton row4 col4 function">-</button>
+			</div>
 		</div>
+		<div id="comments">
+			<h2>About this app</h2>
+			<ul>
+				<li>Instructions for using the app: <p> There are two sample interfaces in my app, a two button and a three button. The two button's controls are: Z- next, X- select. The three button's controls are: A- previous, S- next, D- select.</li>
 
-		<!-- Dialer Tab -->
-		<div class="divClass" id="content">
-			<div class="divClass" id="contentDialer">
-				<h1>Dialer</h1> 
-				
-				<form class="formClass">
-					<label for="input1"></label>
-					<input id="input1">
-				</form>
-				
-				<!-- Row 1 -->
-				<button class="buttonClass" id="button1">
-					1
-				</button>
-				<button class="buttonClass" id="button2">
-					2
-				</button>
-				<button class="buttonClass" id="button3">
-					3
-				</button>
+				<li>Test procedure: <p>The conditions I tested were between my two and three button interfaces. I tested 3 times with 5 equations. The problems were: 
+				<ol>
+					<li>
+						97*42= 4074
+					</li>
+					<li>
+						2+2+2+2+2= 10
+					</li>
+					<li>
+						6/2= 3
+					</li>
+					<li>
+						321+123= 444
+					</li>
+					<li>
+						498+3287-3905*2= -240
+					</li>
+				</ol>
 				<br>
-
-				<!-- Row 2 -->
-				<button class="buttonClass" id="button4">
-					4
-				</button>
-				<button class="buttonClass" id="button5">
-					5
-				</button>
-				<button class="buttonClass" id="button6">
-					6
-				</button>
-				<br>
-
-				<!-- Row 3 -->
-				<button class="buttonClass" id="button7">
-					7
-				</button>
-				<button class="buttonClass" id="button8">
-					8
-				</button>
-				<button class="buttonClass" id="button9">
-					9
-				</button>
-				<br>
-
-				<!-- Row 4 -->
-				<button class="buttonClass" id="buttonStar">
-					*
-				</button>
-				<button class="buttonClass" id="button0">
-					0
-				</button>
-				<button class="buttonClass" id="buttonHash">
-					#
-				</button>
-				<br>
-				<br>
-				<!-- Row 5 -->
-				<button class="buttonClass2" id="buttonDial">
-					Dial
-				</button>
-				<button class="buttonClass2" id="buttonClear">
-					Clear
-				</button>
-				<br>
-
-			</div>
-
-			<!-- Contact List Tab -->
-			<div class="divClass" id="contentList">
-				
-				<h1>Contact List</h1>
-
-				<!-- Row 1 -->
-				<button class="buttonClass2" id="buttonName1">
-					Waylon Dalton
-				</button>
-				<button class="buttonClass2" id="buttonName2">
-					Marcus Cruz
-				</button>
-				<button class="buttonClass2" id="buttonName3">
-					Eddie Randolph
-				</button>
-				<br>
-
-				<!-- Row 2 -->
-				<button class="buttonClass2" id="buttonName4">
-					Justine Henderson			
-				</button>
-				<button class="buttonClass2" id="buttonName5">
-					Thalia Cobb
-				</button>
-				<button class="buttonClass2" id="buttonName6">
-					Angela Walker
-				</button>
-				<br>
-
-				<!-- Row 3 -->
-				<button class="buttonClass2" id="buttonName7">
-					Joanna Shaffer				
-				</button>
-				<button class="buttonClass2" id="buttonName8">
-					Hadassah Hartman
-				</button>
-				<button class="buttonClass2" id="buttonName9">
-					Mathias Little
-				</button>
-				<br>
-
-				<!-- Row 4 -->
-				<button class="buttonClass2" id="buttonName10">
-					Abdullah Lang		
-				</button>
-				<button class="buttonClass2" id="buttonName11">
-					Lia Shelton
-				</button>
-				<button class="buttonClass2" id="buttonName12">
-					Jonathon Sheppard
-				</button>
-				<br>
-
-
-			</div>
-
-			<!-- Add Contact Tab -->
-			<div class="divClass" id="contentAdd">
-				<h1>Add Contact</h1>
-
-				<form class="formClass">
-					<label for="addName">Name<br></label>
-					<input id="addName" placeholder="Jane Smith">
-				</form>
-
-				<form class="formClass">
-					<label for="addName">Phone number<br></label>
-					<input id="addName" placeholder="123-456-7890">
-				</form>
-
-				<form class="formClass">
-					<label for="addName">Email address<br></label>
-					<input id="addName" placeholder="jane.smith@colorado.edu">
-				</form>
-
-				<button class="buttonClass2" id="buttonContactAdd">
-					Add Contact
-				</button>
-				<button class="buttonClass2" id="buttonContactClear">
-					Clear
-				</button>
-			</div>
-			
-			<!-- About Tab -->
-			<div class="divClass" id="contentAbout">
-				<h1>About this Project</h1>
-
-				<h2>
-				<p>
-				For this assignment, I kinda just turned on the magnifier and tried just doing what I normally would for a few hours. I browsed Reddit, then attempted to watch YouTube while playing Hearthstone. Throughout that I switched over to Facebook and IM'ed every so often.  
-				</p>
-				<p>
-				The hardest part for me was getting used to the controls, it took me a minute to realize that the panning that happens only gets you as far as your normal screen and doesn't quite work like the middle mouse button, you still have to scroll like normal. 
-				</p>  
-				<p>
-				Using Reddit wasn't aweful, and I got used to it after a few minutes. Switching back to Facebook ended up being a bit annoying though, since I wasn't using Messenger and so I had to find the Facebook tab then find my message window. I had Facebook set to the first tab, which was easy to pan too by moving my mouse to the corner, and I discovered that, since the message windows pop up in the bottom right corner I could also just set my mouse to the bottom right to pan over quickly.
-				</p>
-				<p>
-				Watching YouTube was much more difficult, since the video took up most of the screen, and the panning ended up being too sensitive when I would try to correct it. It even took me a while to realize I had part of the video cut off at the top. Things got weird when I switched to also playing Hearthstone. I wasn't able to see the full window all the time, so I would have to be constantly panning to see the full thing. I ended up getting it to a spot where I could see most of the video on the right side of my sceen and enough of the Hearthstone window too see generally when I needed to focus and react. With Hearthstone being a game you don't really need to constantly attend to, it ended up working pretty okay, and I don't think it had any impact on how I played, besides a minor slowdown. I ended up just playing for an hour and a half like that. 
-				</p>
-				<p>
-				As far as things I added, I just changed the website to have high contrast and increased the font size to 200% as was asked, and it ended up working almost perfectly with what I had set up already. 
-				</p>
-			
-				<p> <img src = "P1.png" alt = "Half of a Hearthstone game screen" width = "750" height = "500"></p><p>Here's what it looked like when I was just playing Hearthstone. 
-				</p>
-				<p> <img src = "P2.png" alt = "A YouTube video with just an edge of a Hearthstone screen visable." width = "750" height = "500"> </p><p>
-				And here's when I was also watching YouTube. You could see most of the video, and also just enough to see when actions were happening and if it was my turn in Hearthstone. 
-				</p>
-	</h2>
-
-			</div>
-
-
-
+				</li>
+				<li>Test Results: <p>
+				<ul>
+					<li>Two Buttons</li>
+					<ol>
+						<li>Trial 1: 2m 11s. Errors: 7</li>
+						<li>Trial 2: 1m 40s. Errors: 2</li>
+						<li>Trail 3: 1m 33s. Errors: 3</li>
+					</ol>
+					<li>Three Buttons</li>
+					<ol>
+						<li>Trial 1: 1m 7s. Errors: 5</li>
+						<li>Trial 2: 1m 17s. Errors: 10</li>
+						<li>Trail 3: 0m 56s. Errors: 2</li>
+					</ol>
+				</ul>
+				</li>
+				<li>Results: <p>
+				Two Button Average: 1m 49.3s. Errors: 4<br>
+				Three Button Average: 1m 6.67s. Errors: 5.67<p>
+				The two button trial was on average 40 seconds slower than with three buttons, but had a smaller error rate. Errors were typically going too far and missing the needed number. This was a larger issue in the two button trial, which can be seen from the error rate. Even though there were less errors on average, the trails ended up being much longer due to going too far, since 15 key presses were required to correct it. Other errors included pressing the wrong keys, which was most common in the three button trial. The two button trail also caused fatiuge more quickly than in the three button trial.  
+				</li>
+			</ul>
 		</div>
-
-
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-		<script src="phone.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" type="text/javascript"></script>
+		<script src="calculator.js" type="text/javascript"></script>
 	</body>
 </html>
